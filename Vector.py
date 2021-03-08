@@ -107,8 +107,6 @@ class Vector2D():
         vy = vec2.y - vec1.y
         return math.degrees(math.atan2(vx, vy))
 
-    
-
     def __str__(self):
         return str("X: " + str(self.x) + ", " "Y: " + str(self.y) + ", Mag: " + str(self.getMagnitude()))
 
