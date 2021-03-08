@@ -36,6 +36,11 @@ class Vector2D():
             self.x /= m
             self.y /= m
 
+    def dot(self,vec2):
+        vx = self.x * vec2.X
+        vy = self.y * vec2.y
+        return vx + vy
+
     def dist(self, vec2):
         d = (self.x - vec2.x) * (self.x - vec2.x)
         e = (self.y - vec2.y) * (self.y - vec2.y)
@@ -84,6 +89,13 @@ class Vector2D():
         vec = Vector2D(vec1.x * scalar,vec1.y * scalar)
         return vec
 
+    @staticmethod
+    def dotVector(vec1,vec2):
+        vx = vec1.x * vec2.X
+        vy = vec1.y * vec2.y
+        return vx + vy
+
+
     def __str__(self):
-        return str(self.__dict__)
+        return str("X: " + str(self.x) + ", " "Y: " + str(self.y) + ", Mag: " + str(self.getMagnitude()))
 
