@@ -68,6 +68,12 @@ class Vector2D():
         e = (self.y - vec2.y) * (self.y - vec2.y)
         f = d + e
         return math.sqrt(f)
+        math.atan2
+
+    def getAngle(self, vec1):
+        vx = self.x - vec1.x
+        vy = self.y - vec1.y
+        return math.degrees(math.atan2(vx, vy))
     
     @staticmethod
     def sumVector(vec1,vec2):
@@ -95,6 +101,13 @@ class Vector2D():
         vy = vec1.y * vec2.y
         return vx + vy
 
+    @staticmethod
+    def getVectorAngle(self, vec1, vec2):
+        vx = vec2.x - vec1.x
+        vy = vec2.y - vec1.y
+        return math.degrees(math.atan2(vx, vy))
+
+    
 
     def __str__(self):
         return str("X: " + str(self.x) + ", " "Y: " + str(self.y) + ", Mag: " + str(self.getMagnitude()))
