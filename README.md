@@ -4,13 +4,13 @@
 
 To download VecMatPy, either fork this github repo or simply use Pypi via pip.
 ```sh
-$ pip install scrapeasy
+$ pip install vecmatpy
 ```
 
 ## Using it
 
 ```Python
-from scrapeasy import Website, Page
+from vecmatpy import Vector2D, vector3D
 ```
 
 ### Creating a 2D vector
