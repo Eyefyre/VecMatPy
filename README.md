@@ -10,7 +10,7 @@ $ pip install vecmatpy
 ## Using it
 
 ```Python
-from vecmatpy import Vector2D, vector3D
+from VecMatPy.Vector import Vector2D, vector3D
 ```
 
 ### Creating a 2D vector
