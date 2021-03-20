@@ -63,10 +63,13 @@ class Vector2D():
     def copy(self):
         return self
 
-    def getAngle(self, vec1):
+    def getAngleBetweenVectors(self, vec1):
         vx = self.x - vec1.x
         vy = self.y - vec1.y
         return math.degrees(math.atan2(vx, vy))
+
+    def getAngle(self):
+        return math.degrees(math.atan(self.y/self.x))
     
     def __str__(self):
         return str("X: " + str(self.x) + ", " "Y: " + str(self.y) + ", Mag: " + str(self.getMagnitude()))
